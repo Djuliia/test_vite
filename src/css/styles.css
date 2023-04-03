@@ -5,21 +5,63 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
 @import url('./header.css');
+@import url('./hero.css');
+@import url('./features.css');
+@import url('./video.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+--primary-text-color: #fff;
+--secondary-text-color: #000000;
+--bg-color-dark: #06071B;
+--bg-color-light: #E5E5E5;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.container {
+  max-width: 1280px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+
+body{
+  font-family: Inter, sans-serif;
+    font-size: 14px;
+    line-height: 1.21;
+    color: var(--primary-text-color);
+
+}
+
+.section{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.btn{
+  padding: 11px 12px 12px 12px;
+  min-width: 200px;
+  background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+    border-radius: 5px;
+    color: inherit;
+    font-family: inherit;
+    font-weight: 700;
+      font-size: 16px;
+      line-height: 1.19;
+}
+
+.section-title {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.section-suptitle {
+font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
 }

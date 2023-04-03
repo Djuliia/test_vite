@@ -1,0 +1,16 @@
+.video {
+    background-color: var(--bg-color-dark);
+    color: var(--primary-text-color);
+}
+
+.video__title {
+    margin-bottom: 20px;
+}
+
+.video__text {
+    max-width: 479px;
+   margin-bottom: 40px;
+   line-height: 1.19;
+   font-weight: 500;
+   font-size: 16px;
+}

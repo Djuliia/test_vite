@@ -1,18 +1,32 @@
 .header {
-  padding: 20px 0;
+  position: absolute;
+  top: 26px;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 19px 0;
+  background: linear-gradient(90.03deg, rgba(0, 197, 235, 0.3) -1.97%, rgba(181, 68, 254, 0.3) 89.43%);;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 28px;
 }
 
 .nav-list {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   gap: 40px;
 }
 
 .nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+font-size: 12px;
+  line-height: 1.25;
+  text-transform: uppercase;
 }
 
 .nav-link:hover,
