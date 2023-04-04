@@ -1,0 +1,29 @@
+.testimonials {
+ color: var(--secondary-text-color);
+ text-align: center;
+}
+
+.testimonials__title {
+margin-bottom: 40px;
+}
+
+.user-img {
+        margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+.user-name {
+margin-bottom: 12px;
+}
+
+.user-company {
+    margin-bottom: 40px;
+}
+
+.user-opinion {
+    margin-bottom: 64px;
+    max-width: 886px;
+    margin-right: auto;
+    margin-left: auto;
+}

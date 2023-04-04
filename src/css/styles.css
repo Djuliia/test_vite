@@ -9,6 +9,9 @@
 @import url('./hero.css');
 @import url('./features.css');
 @import url('./video.css');
+@import url('./team.css');
+@import url('./testimonials.css');
+@import url('./contact.css');
 
 :root {
 --primary-text-color: #fff;
@@ -53,15 +56,27 @@ body{
     font-weight: 700;
       font-size: 16px;
       line-height: 1.19;
+      border: none;
 }
 
 .section-title {
   font-size: 24px;
   line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .section-suptitle {
 font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.list-title {
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.list-text {
+  font-weight: 500;
+  line-height: 1.71;
 }
