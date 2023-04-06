@@ -12,12 +12,15 @@
 @import url('./team.css');
 @import url('./testimonials.css');
 @import url('./contact.css');
+@import url('./footer.css');
+@import url('./modal.css');
 
 :root {
 --primary-text-color: #fff;
 --secondary-text-color: #000000;
 --bg-color-dark: #06071B;
 --bg-color-light: #E5E5E5;
+--color-modal-overlay: rgba(46, 47, 66, 0.8);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -56,7 +59,7 @@ body{
     font-weight: 700;
       font-size: 16px;
       line-height: 1.19;
-      border: none;
+      border: transparent;
 }
 
 .section-title {
@@ -71,12 +74,4 @@ font-weight: 500;
   line-height: 1.5;
 }
 
-.list-title {
-  font-size: 18px;
-  line-height: 1.22;
-}
 
-.list-text {
-  font-weight: 500;
-  line-height: 1.71;
-}

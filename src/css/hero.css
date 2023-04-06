@@ -47,3 +47,11 @@ font-size: 40px;
     margin-bottom: 62px;
 }
 
+.btn:hover,
+.btn:focus {
+    background: #06071B;
+border: 1px solid;
+
+    border-image: linear-gradient (#00C5EB 100% #B544FE 100%);
+}
+
