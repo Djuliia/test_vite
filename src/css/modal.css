@@ -6,7 +6,7 @@
     height: 100%;
     background-color: var(--color-modal-overlay);
     z-index: 100;
-transition: opacity 250ms linear, visibility 250ms linear;
+    transition: opacity 250ms linear, visibility 250ms linear;
 
 }
 
@@ -14,6 +14,10 @@ transition: opacity 250ms linear, visibility 250ms linear;
     opacity: 0;
     overflow: hidden;
     pointer-events: none;
+}
+
+.no-scroll {
+    overflow: hidden;
 }
 
 .modal {
@@ -30,8 +34,8 @@ transition: opacity 250ms linear, visibility 250ms linear;
     position: absolute;
     top: 20px;
     right: 20px;
-background-color: transparent;
-border: none;
+    background-color: transparent;
+    border: none;
 }
 
 .modal__icon--closed {
@@ -40,9 +44,9 @@ border: none;
 
 .modal__title {
     font-size: 24px;
-        line-height: 1.17;
-        text-align: center;
-        margin-bottom: 28px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 28px;
 }
 
 .download-list {
@@ -52,29 +56,35 @@ border: none;
 }
 
 .download-item {
-padding: 28px 22px 48px 22px;
-flex-basis: calc ((100% - 22px) / 2);
-width: 233px;
+    padding: 28px 22px 48px 22px;
+    flex-basis: calc ((100% - 22px) / 2);
+    width: 233px;
     height: 394px;
-    background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
     border-radius: 6px;
 }
 
+.download-item.item-bg-color {
+    background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+}
+
+.download-item.item-bg-dark {
+    border: 2px solid;
+    border-image: linear-gradient (#00C5EB 100% #B544FE 100%);
+}
 
 .card-title {
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        text-align: center;
-        margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .card-item {
     line-height: 1.71;
     display: flex;
     align-items: center;
-  
-       }
+}
 
 .card-item::before {
     content: '';
@@ -88,10 +98,9 @@ width: 233px;
 .card-item:not(:last-child) {
     margin-bottom: 14px;
 }
-   
 
 .modal-text {
-font-weight: 500;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 32px;

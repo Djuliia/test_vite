@@ -50,13 +50,17 @@
 .social-link:hover, 
 .social-link:focus {
     background: #06071B;
-        border-image: linear-gradient rgba(0, 197, 235, 1) rgba(181, 68, 254, 1);
+        border-image: var(--gradient);
         border: 1px solid;
 }
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
-    stroke: linear-gradient (#00C5EB 100%, #B544FE 100%);
-    fill: tlinear-gradient (#00C5EB 100%, #B544FE 100%);
+   stop-color:rgba(0, 197, 235, 1);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+    stop-color:rgba(181, 68, 254, 1);
 }
 
 .address-item {

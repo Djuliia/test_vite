@@ -5,6 +5,7 @@
   |============================
 */
 @import url('./reset.css');
+@import url('./mobile-menu.css');
 @import url('./header.css');
 @import url('./hero.css');
 @import url('./features.css');
@@ -15,12 +16,16 @@
 @import url('./footer.css');
 @import url('./modal.css');
 
+
 :root {
---primary-text-color: #fff;
---secondary-text-color: #000000;
---bg-color-dark: #06071B;
---bg-color-light: #E5E5E5;
---color-modal-overlay: rgba(46, 47, 66, 0.8);
+  --primary-text-color: #fff;
+  --secondary-text-color: #000000;
+  --bg-color-dark: #06071B;
+  --bg-color-light: #E5E5E5;
+  --color-modal-overlay: rgba(46, 47, 66, 0.8);
+  --timing-function: 250ms linear;
+  --gradient: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+  --gradient-hover: linear-gradient (rgba(0, 197, 235, 1), rgba(181, 68, 254, 1));
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -36,30 +41,36 @@
   margin: 0 auto;
 }
 
-body{
+body {
   font-family: Inter, sans-serif;
-    font-size: 14px;
-    line-height: 1.21;
-    color: var(--primary-text-color);
-
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--primary-text-color);
 }
 
-.section{
+.section {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.btn{
+.btn {
   padding: 11px 12px 12px 12px;
   min-width: 200px;
-  background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
-    border-radius: 5px;
-    color: inherit;
-    font-family: inherit;
-    font-weight: 700;
-      font-size: 16px;
-      line-height: 1.19;
-      border: transparent;
+  background: var(--gradient);
+  border-radius: 5px;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  border: 1px solid transparent;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #06071B;
+  border: 1px solid;
+  border-image: var(--gradient-hover);
 }
 
 .section-title {
@@ -69,9 +80,7 @@ body{
 }
 
 .section-suptitle {
-font-weight: 500;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
 }
-
-
