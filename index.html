@@ -10,12 +10,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     
-    <script type="module" crossorigin src="/vanilla-app-template/assets/index-03f5ebd9.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-19b9e159.css">
+    <script type="module" crossorigin src="/vanilla-app-template/assets/index-5af25682.js"></script>
+    <link rel="stylesheet" href="/vanilla-app-template/assets/index-493f00bc.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
+  <div class="container header__container">
   <nav class="nav">
     <a href="#" class="logo">Mobileapp</a>
     <ul class="nav-list">
@@ -36,8 +36,43 @@
       </li>
     </ul>
   </nav>
+              <button class="mobile-menu__btn--burger" data-menu-open type="button">
+          <svg class="mobile-menu__icon--burger" width="24" height="14">
+            <use href="../img/sprite.svg#burger"></use>
+          </svg>
+        </button>
+
     </div>
 </header>
+
+    <div class="mobile-menu" data-menu>
+  <button type="button" class="mobile-menu__btn--closed" data-menu-close>
+    <svg class="mobile-menu__icon--closed" width="32" height="32">
+      <use href="../img/sprite.svg#close"></use>
+    </svg>
+  </button>
+  <nav class="mobile-nav">
+    <a href="#" class="logo">Mobileapp</a>
+    <ul class="mobile-nav__list">
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">HOME</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">FEATURES</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">TEAM</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">TESTIMONIALS</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">CONTACT</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
 
 <main>
 
@@ -177,6 +212,7 @@
             <a class="social-link" href="#">
 <svg class="social-icon" width="20" height="20">
     <use href="../../img/sprite.svg#icon-facebook"></use>
+    
 </svg>
             </a>
           </li>
@@ -247,7 +283,7 @@
     </button>
     <h2 class="modal__title">Download</h2>
     <ul class="download-list">
-      <li class="download-item">
+      <li class="download-item item-bg-color">
         <img src="" alt="" class="download-icon-free" />
         <h3 class="card-title">Download free plan</h3>
         <ul class="card-list">
@@ -256,7 +292,7 @@
           <li class="card-item">Community support</li>
             </ul>
  </li>
-      <li class="download-item">
+      <li class="download-item item-bg-dark">
         <img src="" alt="" class="download-icon-free" />
         <h3 class="card-title">Download for 20$</h3>
         <ul class="card-list">
